@@ -19,6 +19,12 @@ public class MyTest {
 		contact1.add("phone", "204-963-3859");
 		person.setContactList(contact1);
 		
+		Person person1 = new Person();
+		person1.setFirstName("Harpreet");
+		person1.setMiddleName("Singh");
+		person1.setSurName("Dhaliwal");
+
+		
 		ListContact list = new ListContact();
 		list.add(person);
 		try {
