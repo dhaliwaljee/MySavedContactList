@@ -25,6 +25,10 @@ public class Contact<T1, T2> implements Serializable{
 		return values;
 	}
 	
+	/**
+	 * return all the contact values without its label (email, phone etc.)
+	 * @return 
+	 */
 	public ArrayList getContactValues(){
 		ArrayList<T2> list = new ArrayList<T2>();
 		for (T1 key : values.keySet()) {
