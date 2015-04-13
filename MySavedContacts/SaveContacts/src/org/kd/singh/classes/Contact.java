@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Contact<T1, T2> implements Serializable{
 	/**
@@ -24,6 +25,13 @@ public class Contact<T1, T2> implements Serializable{
 	public HashMap<T1, T2> get(){
 		return values;
 	}
+	
+	public T2 get(String key){
+		Map<T1, T2> map = (Map<T1, T2>) values;
+		return map.get(key);
+	}
+	
+	
 	
 	/**
 	 * return all the contact values without its label (email, phone etc.)
